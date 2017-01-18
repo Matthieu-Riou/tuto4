@@ -6,14 +6,13 @@ def area(x, y):
     Returns the area of a triangle of base lenght x and height y.
 
     >>> area(4, 7)
-    56
+    14.0
     >>> area(1, 9)
-    18
+    4.5
     >>> area(1, 1)
-    2
+    0.5
     '''
-
-
+    
 
 
 
