@@ -17,7 +17,10 @@ def split(n):
     ''' (int) -> tuple of int
 
     This function takes a three-digit (max) integer as argument and returns a 
-    tuple of those three digits.
+    tuple of those three digits.premier entre eux
+
+    Cette fonction prend un entier de maximum trois chiffres en paramètre, et
+    retourne un tuple contenant chacun de ces trois chiffres.
 
     >>> split(123)
     (1, 2, 3)
@@ -35,6 +38,8 @@ def pgcd(p, q):
 
     Find and return the biggest common denominator of p and q.
 
+    Calcule et retourne le plus grand dénominateur commun de p et q.
+
     >>> pgcd(0, 3)
     3
     >>> pgcd(4, 6)
@@ -50,14 +55,18 @@ def pgcd(p, q):
 
 
 
-def dual_primes(a, b):
+def coprimes(a, b):
     ''' (int, int) -> Boolean
 
-    >>> dual_primes(27, 32)
+    Find and return if a and b are coprimes.
+
+    Calcule et retourne si a et b sont premiers entre eux.
+
+    >>> coprimes(27, 32)
     True
-    >>> dual_primes(15, 25)
+    >>> coprimes(15, 25)
     False
-    >>> dual_primes(21, 23)
+    >>> coprimes(21, 23)
     True
     '''
     # Your code here    
@@ -67,6 +76,10 @@ def dual_primes(a, b):
 
 def remove_odd_numbers(l):
     ''' (list of int) -> NoneType
+
+    Remove all the odd numbers from the list l.
+    
+    Supprime tous les nombres impairs de la liste l.
 
     >>> l = [0, 1, 2, 3, 4, 5] ; remove_odd_numbers(l) ; l
     [0, 2, 4]
@@ -82,7 +95,9 @@ def remove_odd_numbers(l):
 def intersection(l1, l2):
     ''' (list of int, list of int) -> list of int
 
-    Returns a list 
+    Returns the list containing the elements that are in both lists l1 and l2.
+
+    Retourne la liste contenant les éléments qui sont présents dans les deux listes l1 et l2.
 
 
     >>> intersection([1, 2, 3], [1, 2, 3])
@@ -104,6 +119,8 @@ def getIndiceOfMin(l, n):
 
     Returns the indice of the smallest element among the n first elements of l.
 
+    Retourne l'indice du plus petit élément parmi les n premiers éléments de l.
+
     >>> getIndiceOfMin([9, 8, 2, 6, 5, 1], 4)
     2
     >>> getIndiceOfMin([9, 8, 2, 6, 5, 1], 5)
@@ -121,6 +138,8 @@ def sortReverse(l):
     ''' (list of int) -> list of int
 
     Sort l in decreasing order using the getIndiceOfMin() function.
+
+    Trie l dans l'ordre décroissant en utilisant la fonction getIndiceOfMin().
 
     >>> l = [9, 8, 2, 6, 5, 1] ; sortReverse(l) ; l
     [9, 8, 6, 5, 2, 1]
