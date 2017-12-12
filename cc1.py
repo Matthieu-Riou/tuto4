@@ -150,8 +150,7 @@ def sortReverse(l):
 
 
 if __name__ == '__main__':
-    import doctest
-    res = doctest.testmod()
-    print res
+    print "Use runtests to tests your functions : `python runtests.py`"
+    print "Use `python runtests.py -h` for helps"
 
 
