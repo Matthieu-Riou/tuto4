@@ -12,6 +12,75 @@
 
 '''
 
+def function(x, y):
+    ''' (int, int) -> int
+
+    Return x * (y + 2)
+
+    Retourne x * (y + 2)
+
+    >>> function(3, 5)
+    21
+    >>> function(10, 2)
+    40
+    '''
+    # Your code here
+
+
+
+def nb_words(s):
+    ''' (str) -> int
+
+    Return the number of words (separated by a space) in the sentence s.
+
+    Retourne le nombre de mots (séparés par un espace) dans la phrase s.
+
+    >>> nb_words("Ce code fonctionne bien.")
+    4
+    >>> nb_words("C'est un bien beau programme.")
+    5
+    '''
+    # Your code here
+
+
+
+def list_words(s):
+    ''' (str) -> list of str
+
+    Return a list of the words (separated by a space) in the sentence s.
+
+    Retourne une liste contenant les mots (séparés par un espace) de la phrase s.
+
+    >>> list_words("Ce code fonctionne bien.")
+    ['Ce', 'code', 'fonctionne', 'bien.']
+    >>> list_words("C'est un bien beau programme.")
+    ["C'est", 'un', 'bien', 'beau', 'programme.']
+    '''
+    # Your code here
+
+
+
+def print_each_word(s):
+    ''' (str) -> str
+
+    Return a string containing each word (separated by a space) of the 
+    sentence s on a new line.
+
+    Retourne une chaîne de caractères contenant chaque mot (séparés par 
+    un espace) de la phrase s sur une nouvelle ligne.
+
+    >>> print_each_word("Ce code fonctionne bien.")
+    'Ce\\ncode\\nfonctionne\\nbien.'
+    >>> print print_each_word("Cest un bien beau programme.")
+    Cest
+    un
+    bien
+    beau
+    programme.
+    '''
+    # Your code here
+
+
 
 def split(n):
     ''' (int) -> tuple of int

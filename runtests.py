@@ -67,6 +67,10 @@ if __name__ == '__main__':
 
 
     targets = [
+        ("function", function),
+        ("nb_words", nb_words),
+        ("list_words", list_words),
+        ("print_each_word", print_each_word),
         ("split", split),
         ("pgcd", pgcd),
         ("coprimes", coprimes),
