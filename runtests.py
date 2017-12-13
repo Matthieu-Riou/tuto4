@@ -57,9 +57,8 @@ def prompt_release_stdout(fakestdout):
 if __name__ == '__main__':
 
     p = ap.ArgumentParser()
-    p.add_argument("-f", "--function", default = '')
-    p.add_argument("-a", "--all", action='store_true')
-    p.add_argument("-l", "--list", action='store_true')
+    p.add_argument("-f", "--function", default = '', help = "indicates a function's name to check only this function")
+    p.add_argument("-a", "--all", action='store_true', help = "checks all functions without details")
     args = p.parse_args()
 
     fakestdout = StringIO.StringIO() # Fake file object for Stdout interception
@@ -118,16 +117,9 @@ if __name__ == '__main__':
             if not args.all:
                 print
                 notPassing = prompt_release_stdout(fakestdout)
-                if not notPassing and not args.list:
+                if not notPassing:
                     break
 
-                if args.list and not notPassing:
-                    print "=" * 79
-                    action = raw_input("Continue? [Y(es)/n(o)] ")
-                    action = action.lower()
-
-                    if action == 'n':
-                        break
 
         fakestdout.close()
         fakestdout = StringIO.StringIO()
