@@ -31,6 +31,8 @@ def function2(x, y):
     420
     >>> function2(10,2)
     1560
+    >>> check_usage(function2, "function")
+    True
     '''
     # Your code here
 
@@ -121,6 +123,8 @@ def is_palindrome(s):
     False
     >>> is_palindrome("ressasser")
     True
+    >>> check_usage(is_palindrome, "is_palindrome")
+    True
     '''
     # Your code here
 
@@ -180,6 +184,8 @@ def coprimes(a, b):
     >>> coprimes(15, 25)
     False
     >>> coprimes(21, 23)
+    True
+    >>> check_usage(coprimes, "pgcd")
     True
     '''
     # Your code here    
@@ -254,6 +260,8 @@ def sort_reverse(l):
 
     >>> l = [9, 8, 2, 6, 5, 1] ; sort_reverse(l) ; l
     [9, 8, 6, 5, 2, 1]
+    >>> check_usage(sort_reverse, "get_indice_of_min")
+    True
     '''
     # Your code here
 
