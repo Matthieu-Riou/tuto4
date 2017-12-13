@@ -67,18 +67,19 @@ if __name__ == '__main__':
 
     targets = [
         ("function", function),
+        ("function2", function2),
         ("nb_words", nb_words),
         ("list_words", list_words),
         ("split_words_by_line", split_words_by_line),
         ("has_n_chars", has_n_chars),
+        ("is_palindrome", is_palindrome),
         ("split", split),
         ("pgcd", pgcd),
         ("coprimes", coprimes),
         ("remove_odd_numbers", remove_odd_numbers),
         ("intersection", intersection),
         ("get_indice_of_min", get_indice_of_min),
-        ("sort_reverse", sort_reverse),
-        ("is_palindrome", is_palindrome)
+        ("sort_reverse", sort_reverse)
     ]
 
 

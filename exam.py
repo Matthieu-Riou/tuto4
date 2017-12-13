@@ -18,6 +18,24 @@ def function(x, y):
 
 
 
+def function2(x, y):
+    ''' (int, int) -> int
+
+    Returns (x * (y + 2))² - x * (y + 2). Reuse previous function.
+
+    Retourne (x * (y + 2))² - x * (y + 2). Réutilissez la fontion précédente.
+
+    >>> function2(2,1)
+    30
+    >>> function2(3, 5)
+    420
+    >>> function2(10,2)
+    1560
+    '''
+    # Your code here
+
+
+
 def nb_words(s):
     ''' (str) -> int
 
@@ -72,7 +90,7 @@ def split_words_by_line(s):
 
 
 
-def has_n_chars(s,c,n):
+def has_n_chars(s, c, n):
     ''' (str, str, int) -> Boolean
 
     Find and return if c appears at least n times in s.
@@ -85,6 +103,24 @@ def has_n_chars(s,c,n):
     True
     >>> has_n_chars("veni vidi vici", "v", 5)
     False
+    '''
+    # Your code here
+
+
+
+def is_palindrome(s):
+    ''' (str) -> Boolean
+
+    Find and return if s is a palindrome.
+
+    Cacule et retourne si s est un palindrome.
+
+    >>> is_palindrome("anna")
+    True
+    >>> is_palindrome("revolver")
+    False
+    >>> is_palindrome("ressasser")
+    True
     '''
     # Your code here
 
@@ -218,24 +254,6 @@ def sort_reverse(l):
 
     >>> l = [9, 8, 2, 6, 5, 1] ; sort_reverse(l) ; l
     [9, 8, 6, 5, 2, 1]
-    '''
-    # Your code here
-
-
-
-def is_palindrome(s):
-    ''' (str) -> Boolean
-
-    Find and return if s is a palindrome.
-
-    Cacule et retourne si s est un palindrome.
-
-    >>> is_palindrome("anna")
-    True
-    >>> is_palindrome("revolver")
-    False
-    >>> is_palindrome("ressasser")
-    True
     '''
     # Your code here
 
