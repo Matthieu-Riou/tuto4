@@ -15,7 +15,7 @@
 def function(x, y):
     ''' (int, int) -> int
 
-    Return x * (y + 2)
+    Returns x * (y + 2)
 
     Retourne x * (y + 2)
 
@@ -31,7 +31,7 @@ def function(x, y):
 def nb_words(s):
     ''' (str) -> int
 
-    Return the number of words (separated by a space) in the sentence s.
+    Returns the number of words (separated by a space) in the sentence s.
 
     Retourne le nombre de mots (séparés par un espace) dans la phrase s.
 
@@ -47,7 +47,7 @@ def nb_words(s):
 def list_words(s):
     ''' (str) -> list of str
 
-    Return a list of the words (separated by a space) in the sentence s.
+    Returns a list of the words (separated by a space) in the sentence s.
 
     Retourne une liste contenant les mots (séparés par un espace) de la phrase s.
 
@@ -60,10 +60,10 @@ def list_words(s):
 
 
 
-def print_each_word(s):
+def split_words_by_line(s):
     ''' (str) -> str
 
-    Return a string containing each word (separated by a space) of the 
+    Returns a string containing each word (separated by a space) of the 
     sentence s on a new line.
 
     Retourne une chaîne de caractères contenant chaque mot (séparés par 
@@ -81,6 +81,22 @@ def print_each_word(s):
     # Your code here
 
 
+
+def has_n_chars(s,c,n):
+    ''' (str, str, int) -> Boolean
+
+    Find and return if c appears at least n times in s.
+
+    Calcule et retourne si c apparaît au moins n fois dans s.
+
+    >>> has_n_chars("un serpent si souple", "s", 3)
+    True
+    >>> has_n_chars("l'attaque tant attendue", "t", 4)
+    True
+    >>> has_n_chars("veni vidi vici", "v", 5)
+    False
+    '''
+    # Your code here
 
 def split(n):
     ''' (int) -> tuple of int
@@ -183,39 +199,55 @@ def intersection(l1, l2):
 
 
 
-def getIndiceOfMin(l, n):
+def get_indice_of_min(l, n):
     ''' (list of int, int) -> int
 
     Returns the indice of the smallest element among the n first elements of l.
 
     Retourne l'indice du plus petit élément parmi les n premiers éléments de l.
 
-    >>> getIndiceOfMin([9, 8, 2, 6, 5, 1], 4)
+    >>> get_indice_of_min([9, 8, 2, 6, 5, 1], 4)
     2
-    >>> getIndiceOfMin([9, 8, 2, 6, 5, 1], 5)
+    >>> get_indice_of_min([9, 8, 2, 6, 5, 1], 5)
     2
-    >>> getIndiceOfMin([9, 8, 2, 6, 5, 1], 6)
+    >>> get_indice_of_min([9, 8, 2, 6, 5, 1], 6)
     5
-    >>> getIndiceOfMin([9, 8, 2, 6, 5, 1], 7)
+    >>> get_indice_of_min([9, 8, 2, 6, 5, 1], 7)
     5
     '''
     # Your code here
 
 
 
-def sortReverse(l):
+def sort_reverse(l):
     ''' (list of int) -> list of int
 
     Sort l in decreasing order using the getIndiceOfMin() function.
 
     Trie l dans l'ordre décroissant en utilisant la fonction getIndiceOfMin().
 
-    >>> l = [9, 8, 2, 6, 5, 1] ; sortReverse(l) ; l
+    >>> l = [9, 8, 2, 6, 5, 1] ; sort_reverse(l) ; l
     [9, 8, 6, 5, 2, 1]
     '''
     # Your code here
 
 
+
+def is_palindrome(s):
+    ''' (str) -> Boolean
+
+    Find and return if s is a palindrome.
+
+    Cacule et retourne si s est un palindrome.
+
+    >>> is_palindrome("anna")
+    True
+    >>> is_palindrome("revolver")
+    False
+    >>> is_palindrome("ressasser")
+    True
+    '''
+    # Your code here
 
 
 if __name__ == '__main__':
