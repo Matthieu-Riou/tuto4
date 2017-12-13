@@ -1,16 +1,6 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
-''' 
-
-    Question 1  -> Split
-    Question 2  -> dual_primes
-    Question 3  -> remove_odd_numbers
-    Question 4  -> intersection
-    Question 5a -> getIndiceOfMin
-    Question 5b -> sortReverse
-
-'''
 
 def function(x, y):
     ''' (int, int) -> int
@@ -69,9 +59,9 @@ def split_words_by_line(s):
     Retourne une chaîne de caractères contenant chaque mot (séparés par 
     un espace) de la phrase s sur une nouvelle ligne.
 
-    >>> print_each_word("Ce code fonctionne bien.")
+    >>> split_words_by_line("Ce code fonctionne bien.")
     'Ce\\ncode\\nfonctionne\\nbien.'
-    >>> print print_each_word("Cest un bien beau programme.")
+    >>> print split_words_by_line("Cest un bien beau programme.")
     Cest
     un
     bien
@@ -97,6 +87,8 @@ def has_n_chars(s,c,n):
     False
     '''
     # Your code here
+
+
 
 def split(n):
     ''' (int) -> tuple of int
@@ -158,7 +150,6 @@ def coprimes(a, b):
 
 
 
-
 def remove_odd_numbers(l):
     ''' (list of int) -> NoneType
 
@@ -198,7 +189,6 @@ def intersection(l1, l2):
 
 
 
-
 def get_indice_of_min(l, n):
     ''' (list of int, int) -> int
 
@@ -222,9 +212,9 @@ def get_indice_of_min(l, n):
 def sort_reverse(l):
     ''' (list of int) -> list of int
 
-    Sort l in decreasing order using the getIndiceOfMin() function.
+    Sort l in decreasing order using the get_indice_of_min() function.
 
-    Trie l dans l'ordre décroissant en utilisant la fonction getIndiceOfMin().
+    Trie l dans l'ordre décroissant en utilisant la fonction get_indice_of_min().
 
     >>> l = [9, 8, 2, 6, 5, 1] ; sort_reverse(l) ; l
     [9, 8, 6, 5, 2, 1]
@@ -248,6 +238,7 @@ def is_palindrome(s):
     True
     '''
     # Your code here
+
 
 
 if __name__ == '__main__':
