@@ -1,7 +1,7 @@
-# Tutorat de Programmation 4
+# Examen blanc
 
-- Correction CC1
-- No if required
+- Complete exam.py
+- Execute runtests.py to test your code
 
 
 

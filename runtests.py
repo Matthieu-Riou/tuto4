@@ -3,7 +3,7 @@
 import sys, doctest, string, StringIO, dis
 from colors import colorString
 import argparse as ap
-from cc1 import *
+from exam import *
 
 
 def check_usage(f, name):
